@@ -1,0 +1,12 @@
+<h2>
+  home page
+</h2>
+  
+<form>
+  <h4>My list {{listNum}}</h4>
+ 
+  <input type="text" name="firstname" value="Mickey" [(ngModel)]="editInputText">
+  <input type="submit" [value]="submText" (click)="addItem()">
+  <!-- <h3>{{editInputText}}</h3> -->
+</form> 
+<h2 *ngFor="let item of mylist"> {{item}}</h2>
